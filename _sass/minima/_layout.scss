@@ -204,6 +204,7 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  font-family: "Qingke";
 }
 
 .post-link {
@@ -212,8 +213,6 @@
   font-family: "Qingke";
   color: darken($grey-color-dark, 10%);
 }
-
-
 
 /**
  * Posts
@@ -225,7 +224,7 @@
 .post-title {
   @include relative-font-size(1.625);
   font-family: "Qingke";
-  color: darken($grey-color-dark, 10%);
+  color: darken($grey-color-dark, 5%);
   letter-spacing: -1px;
   line-height: 1;
 
@@ -236,7 +235,7 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  color: $grey-color-dark;
+  color: lighten($grey-color-dark, 10%);
   @include relative-font-size(1.125);
   h2 {
     @include relative-font-size(2);
