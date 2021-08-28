@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: ten
 title: 十年之前
+permalink: /ten/
 ---
 
 <div class="home">
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
