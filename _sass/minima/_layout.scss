@@ -212,6 +212,7 @@
   @include relative-font-size(1.5);
   font-family: "Qingke";
   color: darken($grey-color-dark, 10%);
+  text-decoration: none;
 }
 
 /**
@@ -274,6 +275,30 @@
     &:hover {
   //    color: $grey-color;
       text-decoration: underline;
+    }
+  
+    .social-media-list &:hover {
+      text-decoration: none;
+  
+      .username {
+  //      text-decoration: underline;
+      }
+    }
+  }
+}
+
+.post-content .post-link-ten {
+  a {
+    color: $text-color;
+    text-decoration: none;
+  
+    &:visited {
+  //    color: darken($text-color, 15%);
+    }
+  
+    &:hover {
+  //    color: $grey-color;
+    text-decoration: none;
     }
   
     .social-media-list &:hover {
