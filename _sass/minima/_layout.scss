@@ -15,9 +15,9 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 500;
-  line-height: $base-line-height * $base-font-size * 4.25;
-  letter-spacing: -1px;
+  font-weight: 100;
+  line-height: $base-line-height * $base-font-size * 5.25;
+  letter-spacing: 2px;
   margin-bottom: 0;
   float: left;
   font-size: 3rem;
@@ -30,7 +30,7 @@
 
 .site-nav {
   float: right;
-  line-height: $base-line-height * $base-font-size * 4.25;
+  line-height: $base-line-height * $base-font-size * 5.25;
 
   .nav-trigger {
       display: none;
@@ -258,6 +258,30 @@
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
+    }
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: underline;
+    text-decoration-color: lighten($text-color, 50%);
+    text-underline-offset: 4px;
+  
+    &:visited {
+  //    color: darken($text-color, 15%);
+    }
+  
+    &:hover {
+  //    color: $grey-color;
+      text-decoration: underline;
+    }
+  
+    .social-media-list &:hover {
+      text-decoration: none;
+  
+      .username {
+  //      text-decoration: underline;
+      }
     }
   }
 }

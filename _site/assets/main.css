@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 @font-face { font-family: 'Sheng'; src: url("FZShengSKSJW_Zhun.TTF") format("truetype"); }
 
 /** Basic styling */
-body { font: 100 16px/1.5 Helvetica, "Sheng", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #ffffff; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 100 16px/1.5 Times, "Qingke", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #ffffff; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; letter-spacing: 1px; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -36,12 +36,10 @@ h1, h2, h3, h4, h5, h6 { font-weight: 100; }
 /** Links */
 a { color: #111; text-decoration: none; }
 
-a:hover { color: #828282; }
-
 .social-media-list a:hover { text-decoration: none; }
 
 /** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: 0px; font-style: italic; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
@@ -81,11 +79,11 @@ table td { border: 1px solid #e8e8e8; }
 /** Site header */
 .site-header { min-height: 55.95px; position: relative; font-family: "Qingke"; }
 
-.site-title { font-size: 26px; font-weight: 500; line-height: 102px; letter-spacing: -1px; margin-bottom: 0; float: left; font-size: 3rem; }
+.site-title { font-size: 26px; font-weight: 100; line-height: 126px; letter-spacing: 2px; margin-bottom: 0; float: left; font-size: 3rem; }
 
 .site-title, .site-title:visited { color: #292929; }
 
-.site-nav { float: right; line-height: 102px; }
+.site-nav { float: right; line-height: 126px; }
 
 .site-nav .nav-trigger { display: none; }
 
@@ -153,6 +151,12 @@ table td { border: 1px solid #e8e8e8; }
 .post-content h4 { font-size: 20px; }
 
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+
+.post-content a { color: #111; text-decoration: underline; text-decoration-color: #919191; text-underline-offset: 4px; }
+
+.post-content a:hover { text-decoration: underline; }
+
+.social-media-list .post-content a:hover { text-decoration: none; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
